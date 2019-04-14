@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Default">
+      <UniqueIdentifier>{52ac89e5-19a5-4c14-8f90-9ed2f81413e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default\리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common_Headers">
+      <UniqueIdentifier>{eb375712-8506-494a-8059-f36892305b61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{5d9ace11-ec94-4a0b-a6d2-49c4549e5130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component">
+      <UniqueIdentifier>{0bb96c48-408f-4983-b092-7c5f4843b976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Manager">
+      <UniqueIdentifier>{323a0c6c-743b-4655-a647-0ecf555d8030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene">
+      <UniqueIdentifier>{4702d807-a801-40a6-becb-baa45ad360b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene\Layer">
+      <UniqueIdentifier>{aaed7984-f29e-4e7c-9d96-6ac0b120a3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Base">
+      <UniqueIdentifier>{567e0534-7d77-4e91-80d2-d4f7425d4cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\GameObject">
+      <UniqueIdentifier>{59bd85d5-0900-4ead-be1b-f6c04a625bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene\TestScene">
+      <UniqueIdentifier>{445d0ab2-f0c7-47d9-83ee-ac3e87ec2971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Transform">
+      <UniqueIdentifier>{c9f99662-627c-4bc3-95d5-4c9adde6b114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\GraphicDev">
+      <UniqueIdentifier>{c2c9904e-b14f-404f-a703-c1ba3c8bf0b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Texture">
+      <UniqueIdentifier>{d09ae129-53f7-4e0f-92ba-75ae04354190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Texture\Manager">
+      <UniqueIdentifier>{40d50e0f-2477-43bf-9d7d-0651c1cfa6e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Sprite">
+      <UniqueIdentifier>{0cda8754-78d0-4d9b-ab67-01fccd8227b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{81c1f459-4cef-4d3d-b946-f0e9d0bfe7ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\MainGame">
+      <UniqueIdentifier>{68f5ef5e-11b6-4534-b5bf-74d93c4555d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\DataStructure">
+      <UniqueIdentifier>{59b7e657-55c4-47c1-bbac-bead21959c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\DataStructure\PagingArray">
+      <UniqueIdentifier>{d35341a0-9a38-4ee6-bf41-c36027961631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\ResourceHeader">
+      <UniqueIdentifier>{7826e43e-39aa-46c3-9104-3484fe28f2c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\GameObject">
+      <UniqueIdentifier>{fb6b020b-ff95-47b3-aed2-f8535d6696fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\GameObject\Sheep">
+      <UniqueIdentifier>{afb45465-cf38-4887-b4ce-eb9ebd9bb630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\GameObject\Player">
+      <UniqueIdentifier>{5c800d3a-9930-4df9-983c-3b76f45589d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\GameObject\Pillar">
+      <UniqueIdentifier>{67b7265c-d3b5-4abf-ae49-9df16740af5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\GameObject\Wolf">
+      <UniqueIdentifier>{c373d68b-01b7-4782-923d-157943813885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Controller">
+      <UniqueIdentifier>{f575f771-eb59-4623-ba30-00636977778a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\GameObject\Sheep\SheepAI">
+      <UniqueIdentifier>{0cb3a937-535b-4d15-9fae-71a4bf49a728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\GameObject\Wolf\WolfAI">
+      <UniqueIdentifier>{9f5ab7d3-3eb3-4f48-a83b-bb70c0d89226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\GameObject\Pillar\PillarCreator">
+      <UniqueIdentifier>{fde37707-4dec-44bc-be7e-26f72799d079}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SepherdGame.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Engine_Constant.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Engine_Define.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Engine_Function.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Engine_Functor.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Engine_Macro.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Engine_Struct.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Engine_Typedef.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Frame.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Matrix.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Timer.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Vector2.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Vector3.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common_Headers\Vector4.h">
+      <Filter>Common_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>Client\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>Engine\Scene\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponenetMgr.h">
+      <Filter>Engine\Component\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Base.h">
+      <Filter>Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PagingArray.h">
+      <Filter>Engine\DataStructure\PagingArray</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Engine\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene.h">
+      <Filter>Engine\Scene\TestScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Option.h">
+      <Filter>Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_Options.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Engine\Component\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Engine\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureMgr.h">
+      <Filter>Engine\Texture\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicDev.h">
+      <Filter>Engine\GraphicDev</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Client\GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Engine\Component\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceInclude.h">
+      <Filter>Client\ResourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="Sheep.h">
+      <Filter>Client\GameObject\Sheep</Filter>
+    </ClInclude>
+    <ClInclude Include="Pillar.h">
+      <Filter>Client\GameObject\Pillar</Filter>
+    </ClInclude>
+    <ClInclude Include="Wolf.h">
+      <Filter>Client\GameObject\Wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Engine\Component\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="SheepAI.h">
+      <Filter>Client\GameObject\Sheep\SheepAI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SepherdGame.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Common_Headers\Frame.cpp">
+      <Filter>Common_Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="Common_Headers\Matrix.cpp">
+      <Filter>Common_Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="Common_Headers\Timer.cpp">
+      <Filter>Common_Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="Common_Headers\Vector2.cpp">
+      <Filter>Common_Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="Common_Headers\Vector3.cpp">
+      <Filter>Common_Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="Common_Headers\Vector4.cpp">
+      <Filter>Common_Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>Client\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>Engine\Scene\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponenetMgr.cpp">
+      <Filter>Engine\Component\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Base.cpp">
+      <Filter>Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Engine\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScene.cpp">
+      <Filter>Engine\Scene\TestScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Engine\Component\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Engine\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureMgr.cpp">
+      <Filter>Engine\Texture\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicDev.cpp">
+      <Filter>Engine\GraphicDev</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Client\GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Engine\Component\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Sheep.cpp">
+      <Filter>Client\GameObject\Sheep</Filter>
+    </ClCompile>
+    <ClCompile Include="Pillar.cpp">
+      <Filter>Client\GameObject\Pillar</Filter>
+    </ClCompile>
+    <ClCompile Include="Wolf.cpp">
+      <Filter>Client\GameObject\Wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Engine\Component\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="SheepAI.cpp">
+      <Filter>Client\GameObject\Sheep\SheepAI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SepherdGame.rc">
+      <Filter>Default\리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="SepherdGame.ico">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
