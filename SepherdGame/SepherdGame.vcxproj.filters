@@ -92,6 +92,9 @@
     <Filter Include="Client\GameObject\Pillar\PillarCreator">
       <UniqueIdentifier>{fde37707-4dec-44bc-be7e-26f72799d079}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Client\GameObject\Background">
+      <UniqueIdentifier>{99f909d3-158e-4942-bda2-0b05786e775e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h">
@@ -214,6 +217,9 @@
     <ClInclude Include="SheepAI.h">
       <Filter>Client\GameObject\Sheep\SheepAI</Filter>
     </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Client\GameObject\Background</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SepherdGame.cpp">
@@ -296,6 +302,9 @@
     </ClCompile>
     <ClCompile Include="SheepAI.cpp">
       <Filter>Client\GameObject\Sheep\SheepAI</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Client\GameObject\Background</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

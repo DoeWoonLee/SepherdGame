@@ -20,13 +20,17 @@ public:
 	virtual void Render(void)override;
 
 public:
-	void Setting_Sprite(int iSequence, float fSpriteTime);
+	void Setting_Sprite(int iSequence, float fSpriteTime,int iEnd = -1 ,bool bLoop = false);
+	void Start_Sprite(int iSequence, float fSpriteTime, int iEnd = -1,bool bLoop = false);
 private:
 	CTexture* m_pUsedTex;
 	int m_iIndexX;
 	int m_iIndexY;
+	int m_iEnd;
 	float m_fSpriteTime;
 	float m_fProgressTime;
+
+	bool m_bLoop;
 
 	int m_iColCnt;
 	int m_iRowCnt;

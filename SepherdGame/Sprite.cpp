@@ -13,7 +13,9 @@ CSprite::CSprite(void) noexcept
 	 m_iIndexX(0),
 	 m_iIndexY(0),
 	m_fSpriteTime(0.f),
-	m_fProgressTime(0.f)
+	m_fProgressTime(0.f),
+	m_bLoop(false),
+	m_iEnd(-1)
 {
 }
 CSprite::~CSprite(void) noexcept
@@ -33,15 +35,32 @@ HRESULT CSprite::Post_Initialize(void)
 
 _ulong CSprite::Update(const _float& fTimeDelta)
 {
-	if (m_iIndexX != m_iRowCnt - 1)
+	
+	m_fProgressTime += fTimeDelta;
+	if (m_fProgressTime > m_fSpriteTime)
 	{
-		m_fProgressTime += fTimeDelta;
-		if (m_fProgressTime > m_fSpriteTime)
+		m_iIndexX++;
+
+		int iCompare = -1;
+		if (m_iEnd == -1)
+			iCompare = m_iRowCnt;
+		else
+			iCompare = m_iEnd;
+
+		if (m_iIndexX == iCompare)
 		{
-			m_iIndexX++;
-			m_fProgressTime = 0.f;
+			if (false == m_bLoop)
+				m_iIndexX--;
+			else
+			{
+				m_iIndexX = 0;
+			}
+			
 		}
+		m_fProgressTime = 0.f;
 	}
+	
+	
 	
 
 	return 0;
@@ -59,8 +78,6 @@ void CSprite::Render(void)
 	HBITMAP hOldBitmap = (HBITMAP)SelectObject(hMemDC, m_pUsedTex->Get_Bitmap());
 	
 	CTransform* pTransform = CGraphicDev::GetInstance()->Get_Transform();
-	
-	
 
 	/*TransparentBlt(m_MemDC, pTransform->m_vPosition.x - m_iSpriteWidth / 2.f,
 		pTransform->m_vPosition.y - m_iSpriteHeight / 2.f,
@@ -80,10 +97,18 @@ void CSprite::Render(void)
 	DeleteDC(hMemDC);
 }
 
-void CSprite::Setting_Sprite(int iSequence, float fSpriteTime)
+void CSprite::Setting_Sprite(int iSequence, float fSpriteTime, int iEnd , bool bLoop)
 {
 	m_iIndexY = iSequence;
 	m_fSpriteTime = fSpriteTime;
+	m_bLoop = bLoop;
+	m_iEnd = iEnd;
+}
+
+void CSprite::Start_Sprite(int iSequence, float fSpriteTime, int iEnd, bool bLoop)
+{
+	Setting_Sprite(iSequence, fSpriteTime, iEnd, bLoop);
+	m_iIndexX = 0;
 }
 
 

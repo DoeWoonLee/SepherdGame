@@ -154,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Background.h" />
     <ClInclude Include="Base.h" />
     <ClInclude Include="GraphicDev.h" />
     <ClInclude Include="Pillar.h" />
@@ -196,6 +197,7 @@
     <ClInclude Include="Wolf.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Background.cpp" />
     <ClCompile Include="Base.cpp" />
     <ClCompile Include="GraphicDev.cpp" />
     <ClCompile Include="Pillar.cpp" />

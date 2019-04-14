@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "Sheep.h"
 #include "Pillar.h"
+#include "Background.h"
 
 CTestScene * CTestScene::Create(void)
 {
@@ -24,24 +25,33 @@ HRESULT CTestScene::Init_TestScene(void)
 
 	pLayer->Add_EmptyObject(_T("Pillar"));
 	pLayer->Add_Object(_T("Player"), CPlayer::Create(pLayer->Find_ObjectList(_T("Pillar"))));
-	/*for (int i = 0; i < 5; ++i)
+	for (int i = 0; i < 3; ++i)
 	{
-		for (int j = 0; j < 5; ++j)
+		for (int j = 0; j < 3; ++j)
 		{
-			pLayer->Add_Object( _T("Sheep"),CSheep::Create(i * 100.f, j * 100.f));
+			pLayer->Add_Object( _T("Sheep"),CSheep::Create(i * 80.f + 200.f, j * 80.f + 200.f));
 		}
-	}*/
+	}
+	m_pBackground = CBackground::Create("Background");
 
 	return S_OK;
 }
 
+void CTestScene::Render(void)
+{
+	m_pBackground->Render();
 
+	CScene::Render();
+}
 _ulong CTestScene::Release(void)
 {
 	_ulong dwRefCnt = CScene::Release();
 	if (0 == dwRefCnt)
 	{
+		SAFE_RELEASE(m_pBackground);
 		delete this;
 	}
 	return dwRefCnt;
 }
+
+

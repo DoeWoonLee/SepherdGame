@@ -3,6 +3,7 @@
 
 #include "GameObject.h"
 
+
 class CSheep : public CGameObject
 {
 private:
@@ -10,6 +11,8 @@ private:
 	virtual ~CSheep(void);
 
 	DECLARE_CREATOR(CSheep, float fX, float fY);
+public:
+	virtual _ulong Release(void);
 };
 
 #endif // !Sheep_h__

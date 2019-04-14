@@ -20,16 +20,17 @@ typedef struct tagComEnumStruct
 	}
 }COM_ENUM_STRUCT;
 
-
-#define BIT_COM_TRANSFORM	(1)
-#define BIT_COM_SPRITE		(1 << 1)
-#define BIT_COM_RESOURCE	(1 << 2)
-#define BIT_COM_COLLIDER	(1 << 3)
-#define BIT_CONTROLLER		(1 << 4)
-#define BIT_RENDERCONTROLLER (1 << 5)
+#define BIT_COM_AI			(1)
+#define BIT_COM_TRANSFORM	(1 << 1)
+#define BIT_COM_SPRITE		(1 << 2)
+#define BIT_COM_RESOURCE	(1 << 3)
+#define BIT_COM_COLLIDER	(1 << 4)
+#define BIT_CONTROLLER		(1 << 5)
+#define BIT_RENDERCONTROLLER (1 << 6)
 
 enum COMPONENT_TYPE : _ushort
 {
+	COM_AI,
 	COM_TRANSFORM,
 	COM_SPRITE,
 	COM_RESOURCE,
