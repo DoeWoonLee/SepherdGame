@@ -72,7 +72,7 @@ void CPlayerController::Click_LBMouse(void)
 			{
 				m_pPillarList->push_back(CPillar::Create(_vec2(ptMouse.x, ptMouse.y)));
 
-				//Make_ConvexHull();
+				Make_ConvexHull();
 			}
 				
 		}
@@ -140,28 +140,33 @@ void CPlayerController::Make_ConvexHull(void)
 	++iter;
 	CTransform* pPreViewTransform = pMinTransform;
 	
-	for (; iter != mapAngleTransform.end() ;/*++iter*/)
+	for (; ; iter++)
 	{
+		auto Next = iter;
+		Next++;
+		if (Next == mapAngleTransform.end()) break;
 
-		/*_vec2 vDir1 =   - pPreViewTransform->m_vPosition;
+		_vec2 vDir1 = pSeedTransform->m_vPosition - pPreViewTransform->m_vPosition;
 		_vec2 vDir2 = iter->second->m_vPosition - pPreViewTransform->m_vPosition;
+
 		vDir1.Normalize();
 		vDir2.Normalize();
 
 		_vec3 vCross(XMVector2Cross(vDir1.ToSIMD(), vDir2.ToSIMD()));
 		
-		if (vCross.z < 0)
+		if (vCross.z > 0)
 		{
-			ConvexList.push_back(iter->second);
-			pSeedTransform = iter->second;
-			iter++;
+			ConvexList.push_back(Next->second);
+			pSeedTransform = Next->second;
+			pPreViewTransform = iter->second;
 		}
 		else
 		{
-			ConvexList.push_back(TempIter->second);
-			pSeedTransform = TempIter->second;
-			iter = ++TempIter;
-		}*/
+			auto prev = ConvexList.rbegin()++;
+			pPreViewTransform = *prev;
+			ConvexList.pop_back();
+
+		}
 		//pSeedTransform
 	}
 	m_TestConveList = ConvexList;

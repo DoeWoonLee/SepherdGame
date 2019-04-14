@@ -1,7 +1,39 @@
-﻿  PlayerController.cpp
+﻿  stdafx.cpp
+  Wolf.cpp
+  Transform.cpp
+  TextureMgr.cpp
+  TestScene.cpp
+  SepherdGame.cpp
+  Scene.cpp
+  MainGame.cpp
+  Layer.cpp
+  GameObject.cpp
+  Component.cpp
+  ComponenetMgr.cpp
+  Vector4.cpp
+  Vector3.cpp
+  Vector2.cpp
+  Timer.cpp
+  Matrix.cpp
+  Frame.cpp
+  Texture.cpp
+  Sprite.cpp
+c:\users\이도운\desktop\codes\c++\sepherdgame\sepherdgame\sprite.cpp(94): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SheepAI.cpp
+c:\users\이도운\desktop\codes\c++\sepherdgame\sepherdgame\sheepai.cpp(33): warning C4800: 'int': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  Sheep.cpp
+  PlayerController.cpp
 c:\users\이도운\desktop\codes\c++\sepherdgame\sepherdgame\playercontroller.cpp(43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 c:\users\이도운\desktop\codes\c++\sepherdgame\sepherdgame\playercontroller.cpp(47): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 c:\users\이도운\desktop\codes\c++\sepherdgame\sepherdgame\playercontroller.cpp(49): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 c:\users\이도운\desktop\codes\c++\sepherdgame\sepherdgame\playercontroller.cpp(73): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Player.cpp
+  Pillar.cpp
+  GraphicDev.cpp
+  Base.cpp
+  Background.cpp
+  코드를 생성하고 있습니다...
   SepherdGame.vcxproj -> C:\Users\이도운\Desktop\Codes\C++\SepherdGame\SepherdGame\./SepherdGame.exe
   SepherdGame.vcxproj -> ./SepherdGame.pdb (Full PDB)
